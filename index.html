@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,161 +8,211 @@
   <title>Барбершоп</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <header>
     <div class="container">
-      <nav class="flex nav">
+      <nav class="flex">
         <ul class="flex">
-          <li><a href="#" class="head-a">О нас</a></li>
-          <li><a href="#" class="head-a">Каталог</a></li>
-          <li><a href="#" class="head-a">Частые вопросы</a></li>
+          <li class="flex"><a href="#" class="head-a">О нас</a></li>
+          <li class="flex"><a href="#" class="head-a">Каталог</a></li>
+          <li class="flex"><a href="#" class="head-a">Частые вопросы</a></li>
         </ul>
 
         <ul class="flex">
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#" class="head-a">Вход</a></li>
+          <li class="flex"><a href="#" class="head-a">
+              <span class="hidden">Поиск</span>
+              <svg class="nav-item" width="16" height="22" viewBox="0 0 16 22" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11 9.5a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm-.665 5.249a6.5 6.5 0 1 1 1.414-1.414l3.958 3.958-1.414 1.414-3.958-3.958Z" />
+              </svg>
+
+            </a></li>
+          <li class="flex"><a href="#" class="head-a">
+              <span class="hidden">Корзина</span>
+              <svg class="nav-item" width="16" height="22" viewBox="0 0 16 22" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="m3.09 9 .486-5.095L3.662 3h8.676l.086.905L12.909 9h2.724l-.14 1.124-1 8-.11.876H1.617l-.11-.876-1-8L.368 9H3.09ZM5.1 9h5.8l-.38-4H5.48L5.1 9Zm-1.717 8-.75-6h10.734l-.75 6H3.383ZM8.5 12.5v3h2v-3h-2Zm-3 3v-3h2v3h-2Z" />
+              </svg>
+
+            </a></li>
+          <li class="flex"><a href="#" class="head-a">
+              <svg class="nav-item" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9 2h5v12H9v2h7V0H9v2ZM4.293 3.707 7.536 6.95H0v2h7.536l-3.243 3.242 1.414 1.415 4.95-4.95.707-.707-.707-.707-4.95-4.95-1.414 1.414Z" />
+              </svg>
+
+              Вход</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-<div class="container">
-  <section>
-      <h1 class="hidden">Барбершоп "Бородинский"</h1>
-      <img src="/img/index-logo.svg" alt="Logo" class="logo" width="361" height="152">
-      <div class="features">
-        <ul class="flex">
-          <li class="features-li">
-            <h2 class="features-h2">Быстро</h2>
-            <div class="romb"></div>
-            <p class="features-p">Мы делаем свою работу быстро! Два часа пролетят незаметно, и вы — счастливый обладатель стильной стрижки-минутки!</p>
-          </li>
-          <li class="features-li">
-            <h2 class="features-h2">Круто</h2>
-            <div class="romb"></div>
-             <p class="features-p">Забудьте, как вы стриглись
-                раньше.Мы сделаем из вас звезду футбола 
+    <div class="container">
+      <section>
+        <h1 class="hidden">Барбершоп "Бородинский"</h1>
+        <img src="/img/index-logo.svg" alt="Logo" class="logo" width="361" height="152">
+        <div class="features">
+          <ul class="flex">
+            <li class="features-li">
+              <h2 class="features-h2">Быстро</h2>
+              <p class="features-p">Мы делаем свою работу быстро! Два часа пролетят незаметно, и вы — счастливый
+                обладатель стильной стрижки-минутки!</p>
+            </li>
+            <li class="features-li">
+              <h2 class="features-h2">Круто</h2>
+              <div class="romb"></div>
+              <p class="features-p">Забудьте, как вы стриглись
+                раньше.Мы сделаем из вас звезду футбола
                 или кино! <br>
-                 Во всяком случае внешне.</p>
-         </li>
-          <li class="features-li">
-            <h2 class="features-h2">Дорого</h2>
-            <div class="romb"></div>
-            <p class="features-p">Наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не даёт определённый статус?</p>
-         </li>
-        </ul>
-      </div>
-  </section>
+                Во всяком случае внешне.</p>
+            </li>
+            <li class="features-li">
+              <h2 class="features-h2">Дорого</h2>
+              <div class="romb"></div>
+              <p class="features-p">Наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве
+                цена не даёт определённый статус?</p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-  <section class="section-2">
-    <div class="wrapper flex">
-      <div class="services box">
-        <h2 class="services-h2">Популярные услуги</h2>
-        <ul>
-          <li class="flex services-li">
-            <h3>Стрижка машинкой</h3>
-            <p>800  ₽</p>
-          </li>
-          <li class="flex services-li">
-            <h3>Стрижка усов</h3>
-            <p>1200  ₽</p>
-          </li>
-          <li class="flex services-li">
-            <h3>Груминг</h3>
-            <p>400  ₽</p>
-          </li>
-          <li class="flex services-li">
-            <h3>Комплексная стрижка</h3>
-            <p>2300  ₽</p>
-          </li>
-        </ul>
-        <button type="button" class="butt services-butt">Посмотреть все</button>
-      </div>
+      <section class="section-2">
+        <div class="wrapper flex">
+          <div class="services box">
+            <h2 class="services-h2">Популярные услуги</h2>
+            <ul>
+              <li class="flex services-li">
+                <h3>Стрижка машинкой</h3>
+                <div class="vector"></div>
+                <p class="services-price">800 ₽</p>
+              </li>
+              <li class="flex services-li">
+                <h3>Стрижка усов</h3>
+                <div class="vector"></div>
+                <p class="services-price">1200 ₽</p>
+              </li>
+              <li class="flex services-li">
+                <h3>Груминг</h3>
+                <div class="vector"></div>
+                <p class="services-price">400 ₽</p>
+              </li>
+              <li class="flex services-li">
+                <h3>Комплексная стрижка</h3>
+                <div class="vector"></div>
+                <p class="services-price">2300 ₽</p>
+              </li>
+            </ul>
+            <button type="button" class="butt services-butt">Посмотреть все
+            </button>
+          </div>
 
-      <div class="fotogalery box">
-        <h2 class="fotogalery-h2">Фотогалерея</h2>
-        <img src="/img/Rectangle 6.jpg" alt="Стрижка" 
-        width="390" height="250" class="fotogalery-img">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
+          <div class="fotogalery box">
+            <h2 class="fotogalery-h2">Фотогалерея</h2>
+            <img src="/img/Rectangle 6.jpg" alt="Стрижка" width="390" height="250" class="fotogalery-img">
+            <ul class="flex">
+              <li class="fotogalery-point"></li>
+              <li class="fotogalery-point"></li>
+              <li class="fotogalery-point"></li>
+              <li class="fotogalery-point"></li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="section-3">
+        <div class="wrapper flex">
+          <div class="cont box">
+            <h2 class="cont-h2">Контакты</h2>
+            <h3 class="cont-logo">Барбершоп «Бородинский»</h3>
+            <p class="cont-p">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <h3 class="cont-tel">+7 800 555-86-28</h3>
+            <h3 class="cont-logo">Время работы</h3>
+            <p class="cont-time">пн—пт: с 10:00 до 22:00 <br>
+              сб—вс: с 10:00 до 19:00</p>
+            <div class="flex">
+              <button class="butt">Как проехать</button>
+              <button class="butt cont-but-w">Обратная связь</button>
+            </div>
+          </div>
+
+          <div class="form box">
+            <h2 class="fotogalery-h2">Записаться</h2>
+            <p class="form-p">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
+            <form action="" class="form-form">
+              <div class="form-input form-data">
+                <label for="data" class="form-lab">Дата</label>
+                <input type="text" id="data" value="2022-01-05">
+              </div>
+              <div class="form-input form-time">
+                <label for="time" class="form-lab">Время</label>
+                <input type="text" id="time" value="10:30">
+              </div>
+              <div class="form-input form-tel">
+                <label for="tel" class="form-lab">Телефон</label>
+                <input type="tel" id="tel" value="+7 800 000-00-00">
+              </div>
+              <div class="form-input form-name">
+                <label for="name" class="form-lab">Ваше имя</label>
+                <input type="text" id="name">
+              </div>
+              <button class="butt form-butt">Записаться</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
     </div>
-
-  </section>
-
-  <section class="section-3">
-    <div class="wrapper flex">
-      <div class="cont box">
-        <h2 class="cont-h2">Контакты</h2>
-        <h3 class="cont-logo">Барбершоп «Бородинский»</h3>
-        <p class="cont-p">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-        <h3 class="cont-tel">+7 800 555-86-28</h3>
-        <h3 class="cont-logo">Время работы</h3>
-        <ul>
-          <li class="cont-li">пн—пт: с 10:00 до 22:00</li>
-          <li class="cont-li">сб—вс: с 10:00 до 19:00</li>
-          <button class="butt cont-butt">Как проехать</button>
-          <button class="butt cont-but-w">Обратная связь</button>
-        </ul>
-      </div>
-
-      <div class="form box">
-        <h2 class="fotogalery-h2">Записаться</h2>
-        <p class="form-p">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
-        <form action="" class="form-form">
-          <input type="text">
-          <input type="text">
-          <input type="text">
-          <input type="text">
-          <br>
-          <button class="butt cont-butt">Записаться</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-</div>
   </main>
 
   <footer>
     <div class="container flex foot">
       <div class="foot-st1">
-        <img src="img/logo-short-dark.svg" alt="logo" width="184" height="22" 
-        class="foot-logo">
+        <img src="img/logo-footer.svg" alt="logo" width="184" height="22" class="foot-logo">
         <p class="foot-p">Санкт-Петербург, набережная
           реки Карповки, 5, литера П.</p>
-         <h3 class="foot-a">+7 800 555-86-28</h3>
+        <h3 class="foot-a">+7 800 555-86-28</h3>
         <h3 class="foot-a">Как нас найти?</h3>
       </div>
 
       <div class="foot-st2">
         <h3 class="foot-h3">Получайте лучшие предложения</h3>
-        <div>
-          <a href="" class="butt cont-but-w">question@htmlacademy.ru</a>
+        <div class="flex">
+          <p class=" foot-email ">
+            question@htmlacademy.ru</p>
+          <button type="button" class="butt-item">
+            <svg width="9" height="14" viewBox="0 0 9 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" focusable="false">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M5.586 7 .293 1.707 1.707.293 8.414 7l-6.707 6.707-1.414-1.414L5.586 7Z" />
+            </svg>
+          </button>
+
         </div>
       </div>
 
       <div class="foot-st3">
         <h3 class="foot-h3">Давайте дружить</h3>
         <div class="flex">
-          <a href="#" class="foot-img-a">
-            <img src="/img/instagram.svg" alt="" class="foot-img"></a>
-          <a href="#" class="foot-img-a">
-            <img src="/img/VK.svg" alt="" class="foot-img"></a>
-          <a href="#" class="foot-img-a">
-            <img src="/img/twitter.svg" alt="" class="foot-img"></a>
+          <a href="#" class="foot-social-a foot-social-tw"></a>
+          <a href="#" class="foot-social-a foot-social-vk"></a>
+          <a href="#" class="foot-social-a foot-social-inst"></a>
         </div>
-        <p class="foot-p">Сделано в 
-          <a href="" class="foot-made">.html academy</a></p>
+
+        <p class="foot-p">
+          Сделано в
+          <a href="" class="foot-made">.html academy</a>
+        </p>
       </div>
+      
     </div>
   </footer>
-  
+
 </body>
+
 </html>
