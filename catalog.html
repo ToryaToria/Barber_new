@@ -18,7 +18,7 @@
         </a>
         <ul class="flex">
           <li class="flex"><a href="#" class="head-a">О нас</a></li>
-          <li class="flex"><a href="#" class="head-a">Каталог</a></li>
+          <li class="flex"><a href="#" class="head-a current_page">Каталог</a></li>
           <li class="flex"><a href="#" class="head-a">Частые вопросы</a></li>
         </ul>
 
@@ -65,66 +65,135 @@
 
       <section class="grid ">
         <div class="filter">
-          <h3>Цена</h3>
           <form action="">
-            <input type="text">
+            <fieldset class="filter-wrap">
+              <legend class="filter-h3"> Цена</legend>
+
+                <div class="range">
+                  <div class="range-scale" style="left:42px; width:100px">
+                    <button class=" range-toggle toggle-min" type="button">
+                      <span class="hidden"> Изменить минимальную цену</span>
+                    </button>
+
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="hidden"> Изменить максимальную цену</span>
+                    </button>
+                </div>  
+                </div>
+                
+                 
+                <div class="range-wrap-input flex">
+                  <label for="" class="range-lab"> от 
+                    <input class="range-input" type="text" name="min-price" value="50"> ₽
+                  </label>
+                  <label for="" class="range-lab"> до
+                    <input class="range-input" type="text" name="max-price" value="1500"> ₽
+                  </label>
+                </div>
+            </fieldset>
+
             <fieldset class="filter-wrap">
               <legend class="filter-h3"> Производители</legend>
-              <label class="filter-lab" for="Bed">
-                <input class="filter-point" type="checkbox" id="Bed">Bed Head for Men
-              </label>
+            
+               <ul>
+                 <li class="filter-li">
+                  <label class="control" for="Bed">
+                    <input class="hidden control-input" type="checkbox" id="Bed">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Bed Head for Men</span>
+                    
+                  </label>
+                 </li>
 
-              <label class="filter-lab" for="Homme">
-                <input type="checkbox" id="Homme" class="hidden">Homme Deep Cleansing Cool
-              </label>
+                 <li class="filter-li">
+                  <label class="control" for="Homme">
+                    <input class="hidden control-input" type="checkbox" id="Homme">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Homme Deep Cleansing Cool</span>
+                    
+                  </label>
+                </li>
 
-              <label class="filter-lab" for="So">
-                <input type="checkbox" id="So" class="hidden">So Intense
-              </label>
+                <li class="filter-li">
+                  <label class="control" for="So">
+                    <input class="hidden control-input" type="checkbox" id="So">
+                      <span class="control-mark"></span>
+                      <span class="control-label"> So Intense</span>
+                   
+                  </label>
+                </li>
 
-              <label class="filter-lab" for="Sprekenhus">
-                <input type="checkbox" id="Sprekenhus" class="hidden">Sprekenhus
-              </label>
+                <li class="filter-li">
+                  <label class="control" for="Sprekenhus">
+                    <input class="hidden control-input" type="checkbox" id="Sprekenhus">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Sprekenhus</span>
+                  </label>
+                </li>
 
-              <label class="filter-lab" for="Firm">
-                <input type="checkbox" id="Firm" class="hidden">Firm Storе
-              </label>
+                <li class="filter-li">
+                  <label class="control" for="Firm">
+                    <input class="hidden control-input" type="checkbox" id="Firm" disabled>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Firm Storе</span>
+                    </label>
+                </li>
 
-              <label class="filter-lab" for="Winter">
-                <input type="checkbox" id="Winter" class="hidden">Winter Body
-              </label>
+                <li class="filter-li">
+                  <label class="control" for="Winter">
+                    <input class="hidden control-input" type="checkbox" id="Winter">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Winter Body</span>  
+                  </label>
+                </li>
+               </ul>
             </fieldset>
 
             <fieldset class="filter-wrap">
               <legend class="filter-h3"> Группы товаров </legend>
-              <label class="filter-lab" for="britva">
-                <input type="radio" id="britva" class="hidden">Бритвенные принадлежности
-              </label>
+              
+              <ul>
+                <li class="filter-li">
+                  <label class="control" for="britva">
+                    <input class="hidden control-input" type="radio" id="britva" name="radio">
+                      <span class="control-mark control-mark-radio "></span>
+                      <span class="control-label">Бритвенные принадлежности</span>
+                  </label>
+                </li>
 
-              <label class="filter-lab" for="sred">
-                <input type="radio" id="sred" class="hidden">Средства для ухода
-              </label>
+                <li class="filter-li">
+                  <label class="control" for="sred">
+                    <input class="hidden control-input" type="radio" id="sred" name="radio">
+                      <span class="control-mark control-mark-radio"></span>
+                      <span class="control-label">Средства для ухода</span>
+                  </label>
+                </li>
 
-              <label class="filter-lab" for="aks">
-                <input type="radio" id="aks" class="hidden">Аксессуары
-              </label>
+                <li class="filter-li">
+                  <label class="control" for="aks">
+                    <input class="hidden control-input" type="radio" id="aks" name="radio">
+                      <span class="control-mark control-mark-radio"></span>
+                      <span class="control-label">Аксессуары</span>
+                  </label>
+                </li>
+              </ul>
             </fieldset>
 
-            <button class="butt">Показать</button>
+            <button class="button">Показать</button>
           </form>
         </div>
 
         <div class="cards">
+
           <div class="cards-filt flex">
-            <div class="select-wrap">
-              <form action="">
-                <select сlass="select">
+            <button type="button" class="select-wrap">
+              Сначала дорогие 
+                <!-- <select сlass="hidden" aria-label="Сортировка">
                   <option  value="">Сначала дорогие</option>
                   <option value="">Средние</option>  
                   <option value="">Дешевые</option>
-                </select>
-              </form>
-            </div>
+                </select> -->
+            </button>
             
             <div class="view">
               <svg width="16" height="16" viewBox="0 0 16 16" 
@@ -138,9 +207,8 @@
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm6 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm10 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0ZM0 8a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm10 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0Zm2 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm-8 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0Zm2 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm10 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z"/></svg>
-
-
             </div>
+
           </div>
 
           <div class="cards-wrap flex">
@@ -150,7 +218,7 @@
               <div class="cart-wrap">
                 <p class="cart-name">Шампунь для мужчин Brews Daily</p>
               <p class="services-price">744 ₽</p>
-              <button tupe="button" class="butt cart-but">Купить</button>
+              <button tupe="button" class="button cart-but">Купить</button>
               </div>
 
             </div>
@@ -161,7 +229,7 @@
                 <div class="cart-wrap">
                   <p class="cart-name">Syoss шампунь Men Power & Strength</p>
                   <p class="services-price">160 ₽</p>
-                  <button tupe="button" class="butt cart-but">Купить</button>
+                  <button tupe="button" class="button cart-but">Купить</button>
                 </div>
               </div>
 
@@ -171,7 +239,7 @@
               <div class="cart-wrap">
                 <p class="cart-name">Schauma шампунь для мужчин «Сила и объём с хмелем»</p>
                 <p class="services-price">94 ₽</p>
-                <button tupe="button" class="butt cart-but">Купить</button>
+                <button tupe="button" class="button cart-but">Купить</button>
               </div>
               </div>
 
@@ -181,7 +249,7 @@
               <div class="cart-wrap">
                 <p class="cart-name">Nivea Men шампунь-уход «Экстремальная свежесть с ментолом»</p>
                 <p class="services-price">173 ₽</p>
-                <button tupe="button" class="butt cart-but">Купить</button>
+                <button tupe="button" class="button cart-but">Купить</button>
               </div>  
             </div>
 
@@ -191,7 +259,7 @@
                 <div class="cart-wrap">
                   <p class="cart-name">Шампунь Amplifier Thickening</p>
                   <p class="services-price">441 ₽</p>
-                  <button tupe="button" class="butt cart-but">Купить</button>
+                  <button tupe="button" class="button cart-but">Купить</button>
                 </div>
               </div>
 
@@ -201,27 +269,25 @@
               <div class="cart-wrap">
                 <p class="cart-name">American Crew шампунь Anti-Dandruff </p>
                 <p class="services-price">904 ₽</p>
-                <button tupe="button" class="butt cart-but">Купить</button>
+                <button tupe="button" class="button cart-but">Купить</button>
               </div>
             </div>
 
           </div>
-          <div class="cards-pagin "></div>
-          <ul class="flex">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>
-              <button tupe="button" class="butt">Показать ещё</button>
-            </li>
+
+          <div class="cards-pagin cards-filt flex">
+          <ul class="pagin-wrap pagin-flex">
+            <li><button type="button" class="pagin-after"></button></li>
+            <li><div class="pagin">1</div></li>
+            <li><div class="pagin">2</div></li>
+            <li><div class="pagin">3</div></li>
+            <li><div class="pagin">4</div></li>
+            <li><div class="pagin">5</div></li>
+            <li><button type="button" class="pagin-next"></button></li>
           </ul>
-
-
-
-
+           <button tupe="button" class="button">Показать ещё</button>
         </div>
+      </div>
       </section>
 
     </div>
@@ -242,7 +308,7 @@
         <div class="flex">
           <p class=" foot-email ">
             question@htmlacademy.ru</p>
-          <button type="button" class="butt-item">
+          <button type="button" class="button-item">
             <svg width="9" height="14" viewBox="0 0 9 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true" focusable="false">
               <path fill-rule="evenodd" clip-rule="evenodd"
