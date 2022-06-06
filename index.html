@@ -14,13 +14,13 @@
     <div class="container">
       <nav class="flex">
         <ul class="flex">
-          <li class="flex"><a href="#" class="head-a">О нас</a></li>
-          <li class="flex"><a href="#" class="head-a ">Каталог</a></li>
-          <li class="flex"><a href="#" class="head-a">Частые вопросы</a></li>
+          <li class="flex"><a href="Null.html" class="head-a">О нас</a></li>
+          <li class="flex"><a href="catalog.html" class="head-a ">Каталог</a></li>
+          <li class="flex"><a href="Null.html" class="head-a">Частые вопросы</a></li>
         </ul>
 
         <ul class="flex">
-          <li class="flex"><a href="#" class="head-a">
+          <li class="flex"><a href="Null.html" class="head-a">
               <span class="hidden">Поиск</span>
               <svg class="nav-item" width="16" height="22" viewBox="0 0 16 22" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -29,17 +29,50 @@
               </svg>
 
             </a></li>
-          <li class="flex"><a href="#" class="head-a">
+          <li class="flex popover-position">
+            <a href="#" class="head-a">
               <span class="hidden">Корзина</span>
-              <svg class="nav-item" width="16" height="22" viewBox="0 0 16 22" fill="currentColor"
+              <svg class="nav-item" width="16" height="22" 
+              viewBox="0 0 16 22" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="m3.09 9 .486-5.095L3.662 3h8.676l.086.905L12.909 9h2.724l-.14 1.124-1 8-.11.876H1.617l-.11-.876-1-8L.368 9H3.09ZM5.1 9h5.8l-.38-4H5.48L5.1 9Zm-1.717 8-.75-6h10.734l-.75 6H3.383ZM8.5 12.5v3h2v-3h-2Zm-3 3v-3h2v3h-2Z" />
               </svg>
+            </a>
+         
+            <div class="popover container-close  popover-open">
+            <button type="button" class="popover-close">
+              2
+              <span class="hidden">Закрыть</span>
+            </button>
 
-            </a></li>
-          <li class="flex"><a href="#" class="head-a">
-              <svg class="nav-item" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+            <div class="popover-content">
+              <h2 class="popover-h2">Корзина</h2>
+              <ul>
+                <li class="popover-li">
+                  <div>
+                    <h3>Стрижка машинкой</h3>
+                    <span class="services-price">800 ₽</span>
+                  </div>
+                  <button type="button" class="button popover-button"></button>
+                </li>
+                <li class="popover-li">
+                  <div>
+                    <h3>Стрижка усов</h3>
+                    <span class="services-price">1200 ₽</span>
+                  </div>
+                  <button type="button" class="button popover-button"></button>
+                
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          
+          </li>
+          <li class="flex"><a href="Null.html" class="head-a">
+              <svg class="nav-item-enter" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M9 2h5v12H9v2h7V0H9v2ZM4.293 3.707 7.536 6.95H0v2h7.536l-3.243 3.242 1.414 1.415 4.95-4.95.707-.707-.707-.707-4.95-4.95-1.414 1.414Z" />
@@ -53,7 +86,7 @@
 
   <main>
     <div class="container">
-      <section>
+      <section class="section-1">
         <h1 class="hidden">Барбершоп "Бородинский"</h1>
         <img src="/img/index-logo.svg" alt="Logo" class="logo" width="361" height="152">
         <div class="features">
@@ -65,7 +98,6 @@
             </li>
             <li class="features-li">
               <h2 class="features-h2">Круто</h2>
-              <div class="romb"></div>
               <p class="features-p">Забудьте, как вы стриглись
                 раньше.Мы сделаем из вас звезду футбола
                 или кино! <br>
@@ -73,7 +105,6 @@
             </li>
             <li class="features-li">
               <h2 class="features-h2">Дорого</h2>
-              <div class="romb"></div>
               <p class="features-p">Наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве
                 цена не даёт определённый статус?</p>
             </li>
@@ -107,7 +138,7 @@
                 <p class="services-price">2300 ₽</p>
               </li>
             </ul>
-            <button type="button" class="button services-button">Посмотреть все
+            <button type="button" class="button services-button" disabled>Посмотреть все
             </button>
           </div>
 
@@ -127,11 +158,13 @@
 
       <section class="section-3">
         <div class="wrapper flex">
-          <div class="cont box">
+          <div class="cont box" id="contackts">
             <h2 class="cont-h2">Контакты</h2>
             <h3 class="cont-logo">Барбершоп «Бородинский»</h3>
-            <p class="cont-p">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            <h3 class="cont-tel">+7 800 555-86-28</h3>
+            <p class="cont-p">Санкт-Петербург, набережная реки&nbsp;Карповки,&nbsp;5, литера&nbsp;П.</p>
+            <a href="tel:+78005558628" class="cont-tel">
+              <h3 class="cont-tel">+7 800 555-86-28</h3>
+            </a>
             <h3 class="cont-logo">Время работы</h3>
             <p class="cont-time">пн—пт: с 10:00 до 22:00 <br>
               сб—вс: с 10:00 до 19:00</p>
@@ -161,7 +194,7 @@
                 <label for="name" class="form-lab">Ваше имя</label>
                 <input type="text" id="name">
               </div>
-              <button class="button form-button">Записаться</button>
+              <button type="submit" class="button form-button">Записаться</button>
             </form>
           </div>
         </div>
@@ -174,10 +207,13 @@
     <div class="container flex foot">
       <div class="foot-st1">
         <img src="img/logo-footer.svg" alt="logo" width="184" height="22" class="foot-logo">
-        <p class="foot-p">Санкт-Петербург, набережная
-          реки Карповки, 5, литера П.</p>
-        <h3 class="foot-a">+7 800 555-86-28</h3>
-        <h3 class="foot-a">Как нас найти?</h3>
+        <p class="foot-p">Санкт-Петербург, набережная реки&nbsp;Карповки,&nbsp;5, литера&nbsp;П.</p>
+        <a href="tel:+78005558628" class="cont-tel">
+           <h3 class="foot-a">+7 800 555-86-28</h3>
+        </a>
+        <a href="#contackts" class="foot-a">
+           <h3 class="foot-a">Как нас найти?</h3>
+        </a>
       </div>
 
       <div class="foot-st2">
@@ -206,7 +242,7 @@
 
         <p class="foot-p">
           Сделано в
-          <a href="" class="foot-made">.html academy</a>
+          <a href="Null.html" class="foot-made">.html academy</a>
         </p>
       </div>
       
@@ -215,7 +251,8 @@
 
   <!-- Модальное окно -->
 
-  <div class="modal-container modal-container-close">
+<div>
+  <div class="modal-container container-close">
     <div class="modal-wrap">
       <button type="button" class="modal-close"></button>
       <h2 class="modal-h2">Личный кабинет</h2>
@@ -229,7 +266,7 @@
           <span class="control-mark"></span>
           <span class="control-label modal-span">Запомнить меня</span>
         </label>
-        <a href="" class="modal-a">Забыл пароль</a>
+        <a href="#" class="modal-a">Забыл пароль</a>
       </div>
 
         <button type="submit" class="button modal-button">войти</button>
@@ -237,6 +274,7 @@
       </form>
     </div>
   </div>
+</div>
 
 </body>
 
