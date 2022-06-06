@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Барбершоп</title>
+  <title>Барбершоп каталог</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,17 +13,17 @@
   <header>
     <div class="container">
       <nav class="flex">
-        <a href="#" class="catalog-logo">
+        <a href="index.html" class="catalog-logo">
           <img src="/img/logo-short-light.svg" alt="logo" class="logo-img">
         </a>
         <ul class="flex">
-          <li class="flex"><a href="#" class="head-a">О нас</a></li>
-          <li class="flex"><a href="#" class="head-a current_page">Каталог</a></li>
-          <li class="flex"><a href="#" class="head-a">Частые вопросы</a></li>
+          <li class="flex"><a href="Null.html" class="head-a">О нас</a></li>
+          <li class="flex"><a class="current_page">Каталог</a></li>
+          <li class="flex"><a href="Null.html" class="head-a">Частые вопросы</a></li>
         </ul>
 
         <ul class="flex">
-          <li class="flex"><a href="#" class="head-a">
+          <li class="flex"><a href="Null.html" class="head-a">
               <svg class="nav-item" width="16" height="22" viewBox="0 0 16 22" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -41,7 +41,7 @@
 
               <span class="hidden">Корзина</span></a></li>
 
-          <li class="flex"><a href="#" class="head-a">
+          <li class="flex"><a href="Null.html" class="head-a">
               <svg class="nav-item" width="12" height="14" viewBox="0 0 12 14" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -53,14 +53,28 @@
       </nav>
     </div>
   </header>
+  
   <main>
     <div class="container  container-catalog">
       <div class="breadcrumbs">
         <h1 class="breadcrumbs-h1">Каталог</h1>
-        <div class="flex breadcrumbs-flex">
-          <a href="" class="breadcrumbs-a">Главная</a>
+        <ul class="flex breadcrumbs-flex">
+          <li class="breadcrumbs-romb">
+          <a href="index.html" class="breadcrumbs-a">Главная</a>
+          </li>
+          <li class="breadcrumbs-romb">
+            <a href="" class="breadcrumbs-a">Главная</a>
+            </li>
+            <li class="breadcrumbs-romb">
+              <a href="" class="breadcrumbs-a">Главная</a>
+              </li>
+              <li class="breadcrumbs-romb">
+                <a href="" class="breadcrumbs-a">Главная</a>
+                </li>
+          <li>
           <p>Каталог</p>
-        </div>
+          </li>
+        </ul>
       </div>
 
       <section class="grid ">
@@ -179,7 +193,7 @@
               </ul>
             </fieldset>
 
-            <button class="button">Показать</button>
+            <button type="submit" class="button">Показать</button>
           </form>
         </div>
 
@@ -278,11 +292,11 @@
           <div class="cards-pagin cards-filt flex">
           <ul class="pagin-wrap pagin-flex">
             <li><button type="button" class="pagin-after"></button></li>
-            <li><div class="pagin">1</div></li>
-            <li><div class="pagin">2</div></li>
-            <li><div class="pagin">3</div></li>
-            <li><div class="pagin">4</div></li>
-            <li><div class="pagin">5</div></li>
+            <li><a href="" class="pagin">1</a></li>
+            <li><a href="" class="pagin">2</a></li>
+            <li><a href="" class="pagin">3</a></li>
+            <li><a href="" class="pagin">4</a></li>
+            <li><a href="" class="pagin">5</a></li>
             <li><button type="button" class="pagin-next"></button></li>
           </ul>
            <button tupe="button" class="button">Показать ещё</button>
@@ -297,10 +311,14 @@
     <div class="container flex foot">
       <div class="foot-st1">
         <img src="img/logo-footer.svg" alt="logo" width="184" height="22" class="foot-logo">
-        <p class="foot-p">Санкт-Петербург, набережная
-          реки Карповки, 5, литера П.</p>
-        <h3 class="foot-a">+7 800 555-86-28</h3>
-        <h3 class="foot-a">Как нас найти?</h3>
+        <p class="foot-p">Санкт-Петербург, набережная реки&nbsp;Карповки,&nbsp;5, литера&nbsp;П.</p>
+
+          <a href="tel:+78005558628" class="cont-tel">
+            <h3 class="foot-a">+7 800 555-86-28</h3>
+         </a>
+         <a href="#contackts" class="foot-a">
+            <h3 class="foot-a">Как нас найти?</h3>
+         </a>
       </div>
 
       <div class="foot-st2">
@@ -329,7 +347,7 @@
 
         <p class="foot-p">
           Сделано в
-          <a href="" class="foot-made">.html academy</a>
+          <a href="Null.html" class="foot-made">.html academy</a>
         </p>
       </div>
       
